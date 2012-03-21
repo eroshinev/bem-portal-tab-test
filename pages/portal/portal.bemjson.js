@@ -1,6 +1,7 @@
 ({
     block: 'b-page',
     title: 'portal',
+    js: true,
     head: [
         { elem: 'css', url: 'portal.css'},
         { elem: 'css', url: 'portal.ie.css', ie: 'lt IE 8' },
@@ -9,8 +10,7 @@
     ],
     content: [
         {
-	  block: 'b-menu-horiz',
-	  mods: { layout: 'normal' },
+	  block: 'b-head-tabs',
 	  content: [
 	    {
 	      elem: 'item',
