@@ -1,14 +1,19 @@
-BEM.DOM.decl('b-head-tabs', {
+BEM.DOM.decl('b-head-tabs',
+	{
+		_onHover : function(e){
+			console.log('hover');
+		}
+	
+	},
+	{
 
-    onSetMod : {
 
-        'js' : function() {
+   		live : function() {
+	
+        		this.liveBindTo('mouseover', function(e){
+			this._onHover(e);
+           	 });
 
-	    this.bindTo('mouseover', function(){
-               console.log('hover');
-            });
-
-        }
     }
 
-});
+});	
