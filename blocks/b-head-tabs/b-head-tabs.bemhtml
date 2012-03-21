@@ -1,14 +1,16 @@
 block b-head-tabs {
     js: true,
+    
     content: {
-	var c = {
-		block: 'b-menu-horiz',
-		mods: { layout: 'normal' },
-		content: []
-         };
-	for (i = 0; i < this.ctx.content.length; i++){
-		c.content.push(this.ctx.content[i]);
-        }
-	return c;
+        var c = {
+            block: 'b-menu-horiz',
+            mods: { layout: 'normal' },
+            content: []
+        };
+        var ctxContent = this.ctx.content;
+	ctxContent.forEach(function(el){
+            c.content.push(el);
+        });
+        return c;
    }
 }

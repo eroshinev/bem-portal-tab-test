@@ -4,12 +4,16 @@
             block: 'i-bem',
             elem: 'dom',
             mods: { 'init': 'auto' }
-        },
-	{
-            block: 'b-menu-horiz',
-            mods: { 'layout': 'normal' }
         }
     ],
     shouldDeps: [
+        {
+            block: 'b-menu-horiz',
+            mods: { 'layout': 'normal' }
+        },
+        {
+           block: 'i-ecma',
+           elem: 'array'
+        }
     ]
 });
