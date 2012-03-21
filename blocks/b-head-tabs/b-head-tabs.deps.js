@@ -8,7 +8,7 @@
 	{
             block: 'b-menu-horiz',
             elem: 'dom',
-            mods: { 'layout': 'complex' }
+            mods: { 'layout': 'normal' }
         }
     ],
     shouldDeps: [
