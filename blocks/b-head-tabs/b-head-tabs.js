@@ -8,4 +8,5 @@ BEM.DOM.decl('b-head-tabs', {
 
         }
     }
-}); 
+
+});
