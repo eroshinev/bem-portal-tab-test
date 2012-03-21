@@ -11,6 +11,7 @@
     content: [
         {
 	  block: 'b-head-tabs',
+          js: true,
 	  content: [
 	    {
 	      elem: 'item',
