@@ -4,7 +4,9 @@ BEM.DOM.decl('b-head-tabs', {
 
         'js' : function() {
 
-            console.log('Блок инициализирован');
+	    this.bindTo('mouseover', function(){
+               console.log('hover');
+            });
 
         }
     }
